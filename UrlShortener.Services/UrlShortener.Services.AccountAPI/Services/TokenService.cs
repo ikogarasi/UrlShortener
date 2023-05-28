@@ -14,6 +14,7 @@ public class TokenService : ITokenService
         _configuration = configuration;
     }
 
+    /// <inheritdoc/>
     public string BuildToken(UserEntity user)
     {
         var claims = new List<Claim>

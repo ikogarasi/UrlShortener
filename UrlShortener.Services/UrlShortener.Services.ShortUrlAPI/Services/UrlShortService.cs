@@ -18,11 +18,16 @@ namespace UrlShortener.Services.ShortUrlAPI.Repository
             _httpContext = httpContextAccessor.HttpContext;
         }
 
+        /// <inheritdoc/>
         public async Task<IEnumerable<ShortUrl>> GetAllUrls()
             => await _dbContext.Urls.ToListAsync();
 
+        /// <inheritdoc/>
+
         public async Task<ShortUrl?> GetUrlById(int urlId)
             => await _dbContext.Urls.FirstOrDefaultAsync(i => i.UrlId == urlId);
+
+        /// <inheritdoc/>
 
         public async Task<ShortUrl> CreateShortUrl(ShortUrlDto urlDto)
         {
@@ -54,12 +59,12 @@ namespace UrlShortener.Services.ShortUrlAPI.Repository
             };
 
             await _dbContext.Urls.AddAsync(shortedUrlEntity);
-            await _dbContext.SaveChangesAsync();
-
-            //var url = $"{_httpContext.Request.Scheme}://{_httpContext.Request.Host}/{shortedUrlEntity.ShortedUrl}";
+            await _dbContext.SaveChangesAsync()
 
             return shortedUrlEntity;
         }
+
+        /// <inheritdoc/>
 
         public async Task<string> GetUrlByShort()
         {
@@ -75,6 +80,8 @@ namespace UrlShortener.Services.ShortUrlAPI.Repository
 
             return url.Url;
         }
+
+        /// <inheritdoc/>
 
         public async Task DeleteUrl(int id)
         {

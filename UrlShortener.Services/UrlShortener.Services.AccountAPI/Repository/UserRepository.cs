@@ -21,6 +21,7 @@ public class UserRepository : IUserRepository
         _tokenService = tokenService;
     }
 
+    /// <inheritdoc/>
     public async Task RegisterUser(AuthDto authDto)
     {    
         var user = await _dbContext.Users.FirstOrDefaultAsync(x => x.Email == authDto.Email);
@@ -44,6 +45,7 @@ public class UserRepository : IUserRepository
         await _dbContext.SaveChangesAsync();
     }
 
+    /// <inheritdoc/>
     public async Task<string> Login(AuthDto authDto)
     {
         UserEntity user = await _dbContext.Users.FirstOrDefaultAsync(i => i.Email == authDto.Email);
@@ -64,6 +66,7 @@ public class UserRepository : IUserRepository
         return _tokenService.BuildToken(user);
     }
 
+    /// <inheritdoc/>
     public async Task<UserDto> GetUserById(int userId)
     {
         var userData = await _dbContext.Users.FirstOrDefaultAsync(i => i.UserId == userId);
