@@ -1,0 +1,51 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    min-height: 70px;
+    width: 100%;
+    background-color: #fff8fe;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 7px 16px 0px rgba(1, 134, 218, 0.5);
+    
+    &Left {
+        justify-self: left;
+        
+        ul {
+            padding-left: 20px;
+            padding-right: 0;
+        }
+    }
+
+    &Right {
+        justify-self: right;
+
+        ul {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+    }
+
+    &Navigation {
+        display: inline-flex;
+        gap: 15px;
+        width:fit-content;
+        list-style-type: none;
+    }
+
+    .link {
+        text-decoration: none;
+        color: #363636;
+        cursor: pointer;
+    }:hover {
+        color: #000000
+    }
+
+    .adminLabel {
+        font-weight: bold;
+    }
+}
