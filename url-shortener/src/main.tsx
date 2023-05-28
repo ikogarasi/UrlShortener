@@ -6,7 +6,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
-import { CookiesProvider } from 'react-cookie';
 
 const THEME = createTheme({
   typography: {
@@ -23,13 +22,11 @@ const renderApp = () => {
   root.render(
     <StrictMode>
       <BrowserRouter>
-        <CookiesProvider>
-          <Provider store={store}>
-            <ThemeProvider theme={THEME}>
-              <App />
-            </ThemeProvider>
-          </Provider>
-        </CookiesProvider>
+        <Provider store={store}>
+          <ThemeProvider theme={THEME}>
+            <App />
+          </ThemeProvider>
+        </Provider>
       </BrowserRouter>
     </StrictMode>
   );
