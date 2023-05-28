@@ -3573,11 +3573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.ShortUrlAPI\\UrlShortener.Services.ShortUrlAPI.csproj",
+      "projectUniqueName": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.ShortUrlAPI\\UrlShortener.Services.ShortUrlAPI.csproj",
       "projectName": "UrlShortener.Services.ShortUrlAPI",
-      "projectPath": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.ShortUrlAPI\\UrlShortener.Services.ShortUrlAPI.csproj",
+      "projectPath": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.ShortUrlAPI\\UrlShortener.Services.ShortUrlAPI.csproj",
       "packagesPath": "C:\\Users\\vital\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.ShortUrlAPI\\obj\\",
+      "outputPath": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.ShortUrlAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vital\\AppData\\Roaming\\NuGet\\NuGet.Config",

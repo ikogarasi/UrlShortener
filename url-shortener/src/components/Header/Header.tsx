@@ -14,7 +14,7 @@ export const Header = () => {
   };
 
   return (
-    <div className={styles.header}>
+    <nav className={styles.header}>
       <div className={styles.headerLeft}>
         <ul className={styles.headerNavigation}>
           <li>
@@ -52,6 +52,6 @@ export const Header = () => {
           )}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };

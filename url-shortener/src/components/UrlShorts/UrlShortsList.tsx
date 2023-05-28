@@ -33,17 +33,25 @@ export const UrlShortsList = () => {
   const user = useAppSelector((state) => state.user);
   const navigate = useNavigate();
 
-  const renderRemoveButton = (it: ShortUrlEntity) => {
+  const renderRemoveButton = (urlId: number, createdById: number) => {
     if (user.isAuthenticated) {
+      console.log('am outside');
+      console.log(
+        `${user.userData.userId} === ${createdById} ${
+          user.userData.userId === createdById
+        }`
+      );
+      console.log(user.userData.role === 'ADMIN');
       if (
-        user.userData.role === 'ADMIN' ||
-        user.userData.userId === it.createdById
+        user.userData.userId == createdById ||
+        user.userData.role === 'ADMIN'
       ) {
+        console.log('am inside');
         return (
           <Button
             variant="contained"
             color="error"
-            onClick={() => onDeleteBtnClick(it.urlId)}
+            onClick={() => onDeleteBtnClick(urlId)}
             aria-label="Delete"
           >
             <DeleteOutlined />
@@ -96,7 +104,7 @@ export const UrlShortsList = () => {
                       >
                         <InfoOutlined />
                       </Button>{' '}
-                      {renderRemoveButton(it)}
+                      {renderRemoveButton(it.urlId, it.createdById)}
                     </Box>
                   </TableCell>
                 ) : null}

@@ -43,7 +43,8 @@ namespace UrlShortener.Services.ShortUrlAPI.Repository
             var randomStr = new string(Enumerable.Repeat(chars, 8)
                 .Select(x => x[random.Next(x.Length)]).ToArray());
 
-            var userId = Convert.ToInt32(_httpContext.User.FindFirstValue("sub"));
+            var userClaims = _httpContext.User.Identity as ClaimsIdentity;
+            var userId = Convert.ToInt32(userClaims?.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
             var shortedUrlEntity = new ShortUrl()
             {

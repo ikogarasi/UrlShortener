@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hKB5iRdJmMhrIJbjEqpkc9UuOb2MK8HnSWrQ8XE8EcOuQB5oFYUbo3BjZFQOCOo7hQ5IH2fypoS4iRNg1UDZ3g==",
+  "dgSpecHash": "muikwSYPjxc8uE6Q7+eTfQqXG2+eYGwDJNp1Q/y4bvDX49dv/bxTxaFgHTyZEFTyzl78YUWYMwj3wk4l9y5U+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj",
+  "projectFilePath": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vital\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj": {}
+    "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj": {
+    "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj",
+        "projectUniqueName": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj",
         "projectName": "UrlShortener.Services.AccountAPI",
-        "projectPath": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj",
+        "projectPath": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\UrlShortener.Services.AccountAPI.csproj",
         "packagesPath": "C:\\Users\\vital\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vital\\Desktop\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\obj\\",
+        "outputPath": "C:\\Users\\vital\\Desktop\\UrlShortener\\UrlShortener.Services\\UrlShortener.Services.AccountAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vital\\AppData\\Roaming\\NuGet\\NuGet.Config",
