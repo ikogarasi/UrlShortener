@@ -59,7 +59,7 @@ namespace UrlShortener.Services.ShortUrlAPI.Repository
             };
 
             await _dbContext.Urls.AddAsync(shortedUrlEntity);
-            await _dbContext.SaveChangesAsync()
+            await _dbContext.SaveChangesAsync();
 
             return shortedUrlEntity;
         }
